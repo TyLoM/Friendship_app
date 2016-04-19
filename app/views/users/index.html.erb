@@ -1,0 +1,5 @@
+<% @users.each do |user| %>
+  <%= link_to "#{user.email} Add as friend", friendships_path(:friend_id => user), :method => :post %><br/>
+<% end %>
+
+<%= link_to "Edit my friend list ", url_for(Friendship) %><br/>
